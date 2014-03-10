@@ -88,14 +88,19 @@ public class VarastoTest {
         // varastossa pitäisi olla tilaa 10
         assertEquals(10, varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
-    
+
     @Test
     public void otaLiikaa() {
         varasto.lisaaVarastoon(5);
         double otettuMaara = varasto.otaVarastosta(100);
-        
+
         assertEquals(10, varasto.paljonkoMahtuu(), vertailuTarkkuus);
         assertEquals(5, otettuMaara, vertailuTarkkuus);
+    }
+
+    @Test
+    public void rikki() {
+        assertEquals(5, 6, vertailuTarkkuus);
     }
 
     @Test
