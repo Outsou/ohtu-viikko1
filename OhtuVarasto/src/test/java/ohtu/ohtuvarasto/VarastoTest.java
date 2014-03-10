@@ -99,11 +99,6 @@ public class VarastoTest {
     }
 
     @Test
-    public void rikki() {
-        assertEquals(5, 6, vertailuTarkkuus);
-    }
-
-    @Test
     public void konstr() {
         varasto = new Varasto(-1);
         varasto = new Varasto(0);
